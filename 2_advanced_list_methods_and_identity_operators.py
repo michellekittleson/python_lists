@@ -3,8 +3,11 @@
 submitted = ["Alice", "Bob", "Charlie", "David"]
 attended = ["Charlie", "Eve", "Alice", "Frank"]
 
-if in submitted and attended:
+both = set(submitted) & set(attended)
 
+print(both)
+
+# Should I be using set? I don't believe we learned this, I found it on the internet.
 
 
 # Task #2: Check if the two lists are identical in terms of their content, regardless of order.
@@ -17,4 +20,8 @@ else:
 
 # Task #3: Using list methods, remove any student from the attended list who did not submit their assignment.
 
+attended.remove("Eve")
+attended.remove("Frank")
+print(attended)
 
+# Is there a way to do this besides just removing students one at a time?

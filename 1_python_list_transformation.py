@@ -16,3 +16,15 @@ print(average_grade)
 
 # Task #3: Replace any grade below 80 with the value Failed. 
 
+failed = [x for x in grades if x < 80]
+print (failed)
+
+grades[2] = "failed"
+grades[4] = "failed"
+grades[7] = "failed"
+grades[8] = "failed"
+grades[9] = "failed"
+
+print(grades)
+
+# Is there a way to do this by filtering somehow, not by manually replacing values?
